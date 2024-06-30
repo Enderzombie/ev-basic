@@ -1,0 +1,134 @@
+[
+    {
+        "name": "bot",
+        "events": [
+            "applicationCommandPermissionsUpdate",
+            "cacheSweep",
+            "debug",
+            "error",
+            "invalidated",
+            "ready",
+            "warn",
+            "webhooksUpdate"
+        ]
+    },
+    {
+        "name": "channel",
+        "events": [
+            "channelCreate",
+            "channelDelete",
+            "channelPinsUpdate",
+            "channelUpdate"
+        ]
+    },
+    {
+        "name": "emoji",
+        "events": [
+            "emojiCreate",
+            "emojiDelete",
+            "emojiUpdate"
+        ]
+    },
+    {
+        "name": "guild",
+        "events": [
+            "guildBanAdd",
+            "guildBanRemove",
+            "guildCreate",
+            "guildDelete",
+            "guildIntegrationsUpdate",
+            "guildMemberAdd",
+            "guildMemberAvailable",
+            "guildMemberRemove",
+            "guildMembersChunk",
+            "guildMemberUpdate",
+            "guildScheduledEventCreate",
+            "guildScheduledEventDelete",
+            "guildScheduledEventUpdate",
+            "guildScheduledEventUserAdd",
+            "guildScheduledEventUserRemove",
+            "guildUnavailable",
+            "guildUpdate",
+            "voiceStateUpdate"
+        ]
+    },
+    {
+        "name": "interaction",
+        "events": [
+            "interactionCreate"
+        ]
+    },
+    {
+        "name": "invite",
+        "events": [
+            "inviteCreate",
+            "inviteDelete"
+        ]
+    },
+    {
+        "name": "message",
+        "events": [
+            "messageCreate",
+            "messageDeleteBulk",
+            "messageDelete",
+            "messageReactionAdd",
+            "messageReactionRemoveAll",
+            "messageReactionRemoveEmoji",
+            "messageReactionRemove",
+            "messageUpdate"
+        ]
+    },
+    {
+        "name": "role",
+        "events": [
+            "roleCreate",
+            "roleDelete",
+            "roleUpdate"
+        ]
+    },
+    {
+        "name": "shard",
+        "events": [
+            "shardDisconnect",
+            "shardError",
+            "shardReady",
+            "shardReconnecting",
+            "shardResume"
+        ]
+    },
+    {
+        "name": "stage",
+        "events": [
+            "stageInstanceCreate",
+            "stageInstanceDelete",
+            "stageInstanceUpdate"
+        ]
+    },
+    {
+        "name": "sticker",
+        "events": [
+            "stickerCreate",
+            "stickerDelete",
+            "stickerUpdate"
+        ]
+    },
+    {
+        "name": "thread",
+        "events": [
+            "threadCreate",
+            "threadDelete",
+            "threadListSync",
+            "threadMembersUpdate",
+            "threadMemberUpdate",
+            "threadUpdate"
+        ]
+    },
+    {
+        "name": "user",
+        "events": [
+            "presenceUpdate",
+            "typingStart",
+            "userUpdate"
+        ]
+    }
+]
