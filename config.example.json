@@ -1,0 +1,19 @@
+{
+    "puppeteer": {
+        "browser": {
+            "options": {
+                "preset": "WINDOWS_ODER_LINUX_HIER_EINFÜGEN",
+                "chromePath": "PFAD_ZU_CHROMIUM_HIER_EINFÜGEN"
+            },
+            "headless": true
+        },
+        "page": {
+            "navigationTimeout": 30000,
+            "viewport": {
+                "width": 1280,
+                "height": 720
+            },
+            "screenshots": "PFAD_ZU_SCREENSHOTS_HIER_EINFÜGEN"
+        }
+    }
+}
