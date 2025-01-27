@@ -8,6 +8,7 @@ const colors = {
         blue: '#00689e',
         darkBlue: '#004aad',
         skyBlue: '#459cc8',
+        babyBlue: '#2faee3',
         red: '#a60a1a',
         grey: '#888888',
         black: '#000000',

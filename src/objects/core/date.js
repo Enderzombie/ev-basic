@@ -249,6 +249,32 @@ const date = {
         if (this.data.y % 4 === 0 && this.data.y % 100 !== 0 || this.data.y % 400 === 0) {
             this.months[1].days++; // Erhöht für den Monat Februar die Anzahl an Tagen, wenn es sich um ein Schaltjahr handelt.
         }
+    },
+    // Findet die Jahresdifferenz zwischen zwei Daten heraus.
+    getYearDifference(dateFirst, dateCurrent) {
+        const dateFirstYear = dateFirst.getFullYear();
+        const dateCurrentYear = dateCurrent.getFullYear();
+        const dateFirstMonth = dateFirst.getMonth();
+        const dateCurrentMonth = dateCurrent.getMonth();
+        const dateFirstDay = dateFirst.getDate();
+        const dateCurrentDay = dateCurrent.getDate();
+    
+        if (dateCurrentYear <= dateFirstYear) {
+            return 0;
+        }
+
+        // Grundlegende Differenz der Jahre
+        let alter = dateCurrentYear - dateFirstYear;
+    
+        // Prüfen, ob der dateFirstDay dieses Jahr schon war
+        if (
+            dateCurrentMonth < dateFirstMonth || // Monat noch nicht erreicht
+            (dateCurrentMonth === dateFirstMonth && dateCurrentDay < dateFirstDay) // Tag noch nicht erreicht
+        ) {
+            alter--;
+        }
+    
+        return alter;
     }
 }
 

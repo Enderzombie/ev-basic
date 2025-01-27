@@ -31,6 +31,21 @@ const childProcess = {
             child.stdin.write(input + '\n');
             child.stdin.end();
         });
+    },
+    async execGetWithRegex(command, regex) {
+        return new Promise((resolve, reject) => {
+            exec(command, (error, stdout, stderr) => {
+                var match = '';
+                if (error) {
+                    resolve(error);
+                } else if (stderr) {
+                    resolve(new Error(stderr));
+                } else {
+                    match = stdout.match(regex);
+                    resolve(match);
+                }
+            });
+        });
     }
 }
 

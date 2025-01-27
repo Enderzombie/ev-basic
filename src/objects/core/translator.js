@@ -70,7 +70,7 @@ const translator = {
             await puppeteer.openPage(url);
     
             setTimeout(async () => {
-                const translationText = await puppeteer.getText('#textareasContainer > div.rounded-br-inherit.relative.min-h-\\[240px\\].min-w-0.md\\:min-h-\\[clamp\\(250px\\,50vh\\,557px\\)\\].max-\\[768px\\]\\:min-h-\\[375px\\] > section > div.rounded-inherit.relative.flex.flex-1.flex-col > d-textarea');
+                const translationText = await puppeteer.getText('#textareasContainer > div:nth-child(3) > section > div > d-textarea > div');
 
                 await puppeteer.closeBrowser();
     
